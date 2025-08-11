@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrello — Torrefazione Zanotti</title>
+  <meta name="description" content="Rivedi i prodotti aggiunti e completa l'ordine (demo)." />
+
+  <!-- Open Graph (anteprima link) -->
+  <meta property="og:title" content="Carrello — Torrefazione Zanotti" />
+  <meta property="og:description" content="Rivedi i prodotti aggiunti e completa l'ordine (demo)." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valeriozanotti.github.io/coffee-brew-notes/carrello.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Torrefazione Zanotti <span aria-label="coffee">☕</span></h1>
+    <p class="tagline">Miscela di passione e codice.</p>
+    <nav class="navbar"><a href="index.html" class="">Home</a><a href="blog.html" class="">Blog</a><a href="contatti.html" class="">Contatti</a><a href="assistenza.html" class="">Assistenza & FAQ</a><a href="registrazione.html" class="">Registrazione</a><a href="carrello.html" class="active">Carrello</a></nav>
+  </header>
+<main class="container">
+  <section class="card">
+    <h2>Il tuo carrello</h2>
+    <table class="table">
+      <thead>
+        <tr><th>#</th><th>Prodotto</th><th>Prezzo</th><th>Qt</th><th>Azioni</th></tr>
+      </thead>
+      <tbody id="cart-body">
+        <!-- popolato da JS -->
+      </tbody>
+      <tfoot>
+        <tr><td colspan="4">Totale</td><td id="cart-total">€ 0,00</td></tr>
+      </tfoot>
+    </table>
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+      <a class="btn btn-ghost" href="index.html">Continua lo shopping</a>
+      <button class="btn" onclick="alert('Checkout di esempio — nessun pagamento.');">Procedi al checkout (demo)</button>
+    </div>
+    <p class="help">Demo: il carrello usa solo il tuo browser, nessun server.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <small>© <span id="year"></span> Torrefazione Zanotti</small>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

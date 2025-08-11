@@ -1,0 +1,57 @@
+:root{
+  --bg:#0f1216;
+  --card:#12161c;
+  --muted:#9aa3af;
+  --text:#e5e7eb;
+  --accent:#7c3aed;
+  --accent-2:#2dd4bf;
+  --ring:2px solid rgba(124,58,237,.35);
+  --border:1px solid rgba(255,255,255,.08);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+a{color:#c4b5fd;text-decoration:none}
+a:hover{text-decoration:underline}
+
+.visually-hidden{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+.site-header{padding:24px 16px;display:grid;gap:8px;text-align:center;border-bottom:var(--border);background:#0d1014;position:sticky;top:0;z-index:10}
+.site-header h1{margin:0;font-size:1.6rem}
+.tagline{margin:0;color:var(--muted);font-size:.95rem}
+.navbar{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:6px}
+.navbar a{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.14)}
+.navbar a.active{background:rgba(124,58,237,.2)}
+
+.container{width:min(980px,100%);padding:0 16px 32px;margin:0 auto}
+
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:var(--accent);color:#fff;font-weight:700}
+.btn:focus{outline:var(--ring)}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.15)}
+
+.grid{display:grid;gap:16px}
+.card{background:var(--card);padding:16px;border-radius:16px;border:var(--border);box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.card h3{margin:0 0 8px}
+.badge{display:inline-block;margin-left:8px;padding:4px 8px;border-radius:999px;background:rgba(45,212,191,.15);color:var(--accent-2);border:1px solid rgba(45,212,191,.25);font-size:.8rem}
+
+.products{grid-template-columns:1fr}
+.product-actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.price{font-weight:900}
+
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{padding:10px;border-bottom:var(--border);text-align:left}
+.table tfoot td{font-weight:900}
+
+.form{display:grid;gap:12px}
+.input{width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#0b0e12;color:var(--text)}
+.label{font-weight:700}
+.help{color:var(--muted);font-size:.9rem}
+
+.site-footer{padding:24px 16px;text-align:center;color:var(--muted);border-top:var(--border)}
+
+/* Responsive */
+@media (min-width:720px){
+  .site-header{padding:40px 16px}
+  .site-header h1{font-size:2rem}
+  .products{grid-template-columns:repeat(3,1fr)}
+}

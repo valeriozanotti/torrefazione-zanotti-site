@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — Torrefazione Zanotti</title>
+  <meta name="description" content="Racconti e guide sulla nostra passione per il caffè." />
+
+  <!-- Open Graph (anteprima link) -->
+  <meta property="og:title" content="Blog — Torrefazione Zanotti" />
+  <meta property="og:description" content="Racconti e guide sulla nostra passione per il caffè." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valeriozanotti.github.io/coffee-brew-notes/blog.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Torrefazione Zanotti <span aria-label="coffee">☕</span></h1>
+    <p class="tagline">Miscela di passione e codice.</p>
+    <nav class="navbar"><a href="index.html" class="">Home</a><a href="blog.html" class="active">Blog</a><a href="contatti.html" class="">Contatti</a><a href="assistenza.html" class="">Assistenza & FAQ</a><a href="registrazione.html" class="">Registrazione</a><a href="carrello.html" class="">Carrello</a></nav>
+  </header>
+<main class="container">
+  <section class="grid">
+    <article class="card">
+      <h2>Perché amiamo il caffè di filtro</h2>
+      <p>Il caffè di filtro esalta profumi e dolcezza. È un rituale lento che ci permette di assaporare ogni origine.</p>
+      <a class="btn btn-ghost" href="#">Leggi tutto (demo)</a>
+    </article>
+
+    <article class="card">
+      <h2>Guida rapida: V60</h2>
+      <p>Consigli su macinatura, rapporto e versata per estrazioni pulite e aromatiche.</p>
+      <a class="btn btn-ghost" href="#">Leggi tutto (demo)</a>
+    </article>
+
+    <article class="card">
+      <h2>Espresso a casa: errori comuni</h2>
+      <p>Dose, tempo e temperatura: tre parametri da tenere d’occhio.</p>
+      <a class="btn btn-ghost" href="#">Leggi tutto (demo)</a>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <small>© <span id="year"></span> Torrefazione Zanotti</small>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

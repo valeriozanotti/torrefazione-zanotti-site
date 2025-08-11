@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contatti — Torrefazione Zanotti</title>
+  <meta name="description" content="Scrivici per informazioni su prodotti, ordini o collaborazioni." />
+
+  <!-- Open Graph (anteprima link) -->
+  <meta property="og:title" content="Contatti — Torrefazione Zanotti" />
+  <meta property="og:description" content="Scrivici per informazioni su prodotti, ordini o collaborazioni." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valeriozanotti.github.io/coffee-brew-notes/contatti.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Torrefazione Zanotti <span aria-label="coffee">☕</span></h1>
+    <p class="tagline">Miscela di passione e codice.</p>
+    <nav class="navbar"><a href="index.html" class="">Home</a><a href="blog.html" class="">Blog</a><a href="contatti.html" class="active">Contatti</a><a href="assistenza.html" class="">Assistenza & FAQ</a><a href="registrazione.html" class="">Registrazione</a><a href="carrello.html" class="">Carrello</a></nav>
+  </header>
+<main class="container">
+  <section class="card">
+    <h2>Contatti</h2>
+    <p>Hai una domanda? Compila il modulo oppure scrivi sui nostri canali.</p>
+    <form class="form" onsubmit="event.preventDefault(); alert('Messaggio inviato (demo)'); this.reset();">
+      <label class="label">Nome e Cognome</label>
+      <input class="input" name="nome" required>
+      <label class="label">Email</label>
+      <input class="input" type="email" name="email" required>
+      <label class="label">Messaggio</label>
+      <textarea class="input" name="messaggio" rows="5" required></textarea>
+      <button class="btn" type="submit">Invia</button>
+      <p class="help">Demo: nessuna email viene inviata.</p>
+    </form>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <h3>Social & Link</h3>
+      <p><a href="https://www.linkedin.com/in/valerio-zanotti/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p><a href="https://github.com/valeriozanotti/coffee-brew-notes" target="_blank" rel="noopener">GitHub Repository</a></p>
+    </article>
+    <article class="card">
+      <h3>Sede (fittizia)</h3>
+      <p>Via del Caffè 10, 00100 Roma</p>
+      <p>Orari: Lun–Ven 9:00–18:00</p>
+    </article>
+  </section>
+</main>
+<footer class="site-footer">
+  <small>© <span id="year"></span> Torrefazione Zanotti</small>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

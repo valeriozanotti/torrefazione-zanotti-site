@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registrazione — Torrefazione Zanotti</title>
+  <meta name="description" content="Crea un account per salvare gli ordini e ricevere offerte." />
+
+  <!-- Open Graph (anteprima link) -->
+  <meta property="og:title" content="Registrazione — Torrefazione Zanotti" />
+  <meta property="og:description" content="Crea un account per salvare gli ordini e ricevere offerte." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valeriozanotti.github.io/coffee-brew-notes/registrazione.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Torrefazione Zanotti <span aria-label="coffee">☕</span></h1>
+    <p class="tagline">Miscela di passione e codice.</p>
+    <nav class="navbar"><a href="index.html" class="">Home</a><a href="blog.html" class="">Blog</a><a href="contatti.html" class="">Contatti</a><a href="assistenza.html" class="">Assistenza & FAQ</a><a href="registrazione.html" class="active">Registrazione</a><a href="carrello.html" class="">Carrello</a></nav>
+  </header>
+<main class="container">
+  <section class="card">
+    <h2>Crea un account</h2>
+    <form class="form" onsubmit="handleRegister(event)">
+      <div>
+        <label class="label">Nome</label>
+        <input class="input" name="nome" required>
+      </div>
+      <div>
+        <label class="label">Cognome</label>
+        <input class="input" name="cognome" required>
+      </div>
+      <div>
+        <label class="label">Email</label>
+        <input class="input" type="email" name="email" required>
+      </div>
+      <div>
+        <label class="label">Password</label>
+        <input class="input" type="password" name="password" minlength="6" required>
+        <p class="help">Minimo 6 caratteri. Demo: i dati restano nel tuo browser.</p>
+      </div>
+      <div>
+        <label class="label">Indirizzo</label>
+        <input class="input" name="indirizzo" placeholder="Via, n°, città">
+      </div>
+      <div>
+        <label class="label">Telefono</label>
+        <input class="input" name="telefono" type="tel">
+      </div>
+      <label><input type="checkbox" required> Accetto i termini (demo)</label>
+      <button class="btn" type="submit">Registrati</button>
+    </form>
+  </section>
+</main>
+<footer class="site-footer">
+  <small>© <span id="year"></span> Torrefazione Zanotti</small>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

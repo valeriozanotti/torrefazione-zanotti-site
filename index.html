@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Torrefazione Zanotti — Home</title>
+  <meta name="description" content="Scopri miscele, ricette e accessori. Aggiungi al carrello e segui il nostro blog." />
+
+  <!-- Open Graph (anteprima link) -->
+  <meta property="og:title" content="Torrefazione Zanotti — Home" />
+  <meta property="og:description" content="Scopri miscele, ricette e accessori. Aggiungi al carrello e segui il nostro blog." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://valeriozanotti.github.io/coffee-brew-notes/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop" />
+
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Torrefazione Zanotti <span aria-label="coffee">☕</span></h1>
+    <p class="tagline">Miscela di passione e codice.</p>
+    <nav class="navbar"><a href="index.html" class="active">Home</a><a href="blog.html" class="">Blog</a><a href="contatti.html" class="">Contatti</a><a href="assistenza.html" class="">Assistenza & FAQ</a><a href="registrazione.html" class="">Registrazione</a><a href="carrello.html" class="">Carrello</a></nav>
+  </header>
+<main class="container">
+  <section class="grid products">
+    <article class="card">
+      <h3>Monorigine Etiopia <span class="badge">Light</span></h3>
+      <p>Caffè floreale e agrumato. Ideale per V60 e filtro.</p>
+      <p class="price">€ 9,90 / 250g</p>
+      <div class="product-actions">
+        <button class="btn" onclick="addToCart({id:'ethiopia250', name:'Etiopia 250g', price:9.90, qty:1})">Aggiungi al carrello</button>
+        <a class="btn btn-ghost" href="blog.html">Scopri di più</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>Blend Casa <span class="badge">Medium</span></h3>
+      <p>Equilibrato e dolce, ottimo per moka ed espresso.</p>
+      <p class="price">€ 8,50 / 250g</p>
+      <div class="product-actions">
+        <button class="btn" onclick="addToCart({id:'blendcasa', name:'Blend Casa 250g', price:8.50, qty:1})">Aggiungi al carrello</button>
+        <a class="btn btn-ghost" href="blog.html">Scopri di più</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <h3>Accessori — Filtro V60</h3>
+      <p>Coni in carta 02. Confezione da 100.</p>
+      <p class="price">€ 6,00</p>
+      <div class="product-actions">
+        <button class="btn" onclick="addToCart({id:'filterv60', name:'Filtri V60 (100pz)', price:6.00, qty:1})">Aggiungi al carrello</button>
+        <a class="btn btn-ghost" href="blog.html">Guida V60</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="card" style="margin-top:16px">
+    <h3>Perché questo progetto</h3>
+    <p>È una base per esercitarmi con HTML, CSS responsive, un po’ di JavaScript e meta Open Graph. Il carrello è dimostrativo e funziona nel browser con <em>localStorage</em>.</p>
+    <p>Autore: <a href="https://www.linkedin.com/in/valerio-zanotti/" target="_blank" rel="noopener">Valerio Zanotti</a> · Codice: <a href="https://github.com/valeriozanotti/coffee-brew-notes" target="_blank" rel="noopener">GitHub</a></p>
+  </section>
+</main>
+<footer class="site-footer">
+  <small>© <span id="year"></span> Torrefazione Zanotti</small>
+</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
